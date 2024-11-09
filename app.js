@@ -34,5 +34,22 @@ country.set('Bn', 'Bangladesh');   // Same data not allow
 // }
 
 for (const [key, value] of country) {
-    console.log(key, value);
+    // console.log(key, ':' ,value);
 }
+
+
+
+const myCountry = {
+    Bn: 'Bangladesh',
+    In: 'India',
+    Pk: 'Pakistan',
+    Np: 'Nepal',
+}
+// for (const key of myCountry) {
+//     // console.log(key, myCountry);     // object is not iterable
+// }
+
+for (const key in myCountry) {
+    console.log(key, ':' ,myCountry[key]);
+}
+
